@@ -66,5 +66,5 @@
     "explorer.fileNesting.patterns": {
         "*.sln": "*.csproj",
     },
-    "dotnet.defaultSolution": "grassclickerv2.sln"
+    "dotnet.defaultSolution": "grassclicker.sln"
 }
