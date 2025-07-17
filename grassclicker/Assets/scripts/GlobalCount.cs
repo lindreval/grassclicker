@@ -7,12 +7,15 @@ using TMPro;
 
 public class GlobalCount : MonoBehaviour
 {
-    public static double totalCount;
+    public static double currentTotal;
+    public static double gemTotal;
     public TextMeshProUGUI totalText;
+    public TextMeshProUGUI perSecText;
 
     private void Update()
     {
-        totalText.text = "Total = " + FormatLargeNumber(totalCount);
+        totalText.text = "Total = " + FormatLargeNumber(currentTotal);
+        perSecText.text = FormatLargeNumber(AutoClicker.countIncrease) + " grass touched/sec";
     }
     
     public static string FormatLargeNumber(double number)
