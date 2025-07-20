@@ -1,15 +1,14 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Daily Quest", menuName = "Daily Quest")]
-public class DailyQuest : ScriptableObject
+[CreateAssetMenu(fileName = "New Achievement", menuName = "Achievment")]
+public class Achievements : ScriptableObject
 {
-    public string questName;
+    public string achievementName;
     public string description;
     public int requiredAmount;
     public int currentAmount;
     public bool isCompleted;
     public bool rewardClaimed;
-    public bool videoWatched;
     public double rewardAmount;
     
 }

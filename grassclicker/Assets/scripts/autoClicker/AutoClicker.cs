@@ -19,6 +19,7 @@ public class AutoClicker : MonoBehaviour
 
     IEnumerator CreateIt(){
         GlobalCount.currentTotal += countIncrease/5;
+        GlobalCount.allTimeCount += countIncrease/5;
         yield return new WaitForSeconds(.2f);
         creatingBlank = false;
     }

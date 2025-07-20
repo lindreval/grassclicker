@@ -3,7 +3,7 @@ using System;
 using UnityEngine.UI;
 using TMPro;
 
-public class GlobalClippers : MonoBehaviour
+public class GlobalGnome : MonoBehaviour
 {
     public Button button;
     public GameObject backdrop;
@@ -14,6 +14,7 @@ public class GlobalClippers : MonoBehaviour
     public TextMeshProUGUI description;
     public TextMeshProUGUI price;
     public TextMeshProUGUI levelText;
+
 
     public static int level;
     public static double perSec;
@@ -36,12 +37,12 @@ public class GlobalClippers : MonoBehaviour
     {
         UpdateButtonState();
         UpdateCPS();
-        grassNeeded = Math.Round(Math.Pow(1.15, level) * 20);
+        grassNeeded = Math.Round(Math.Pow(1.15, level) * 150);
     }
 
     private void UpdateCPS()
     {
-        perSec = 0.1 * level;
+        perSec = 1 * level;
     }
 
     private void UpdateButtonState()
@@ -58,14 +59,14 @@ public class GlobalClippers : MonoBehaviour
         }
         else
         {
-            mainText.text = "Rusty Clippers";
+            mainText.text = "Garden Gnome";
             statsText.text = GlobalCount.FormatLargeNumber(perSec) + " grass per sec";
             levelText.text = level.ToString();
 
             backdrop.GetComponent<UnityEngine.UI.Image>().color = new Color(0.5f, 0.5f, 0.5f, 1f);
         }
 
-        description.text = "It'll snip a blade or two";
+        description.text = "Small, silent, and efficient at touching grass";
         price.text = GlobalCount.FormatLargeNumber(grassNeeded);
         levelText.text = GlobalCount.FormatLargeNumber(level);
     }

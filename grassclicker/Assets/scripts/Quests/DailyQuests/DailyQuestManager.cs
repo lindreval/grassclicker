@@ -29,12 +29,14 @@ public class DailyQuestManager : MonoBehaviour
         }
     }
 
-    private void ResetQuests()
+    public void ResetQuests()
     {
         foreach (var quest in dailyQuests)
         {
             quest.currentAmount = 0;
             quest.isCompleted = false;
+            quest.rewardClaimed = false;
+            quest.videoWatched = false;
         }
 
         lastResetDate = DateTime.Now;
@@ -57,12 +59,13 @@ public class DailyQuestManager : MonoBehaviour
         }
     }
 
-    private void SaveQuestProgress()
+    public void SaveQuestProgress()
     {
         foreach (var quest in dailyQuests)
         {
             PlayerPrefs.SetInt(quest.questName + "_CurrentAmount", quest.currentAmount);
             PlayerPrefs.SetInt(quest.questName + "_IsCompleted", quest.isCompleted ? 1 : 0);
+            PlayerPrefs.SetInt(quest.questName + "_RewardClaimed", quest.rewardClaimed ? 1 : 0);
         }
     }
 
@@ -72,6 +75,7 @@ public class DailyQuestManager : MonoBehaviour
         {
             quest.currentAmount = PlayerPrefs.GetInt(quest.questName + "_CurrentAmount", 0);
             quest.isCompleted = PlayerPrefs.GetInt(quest.questName + "_IsCompleted", 0) == 1;
+            quest.rewardClaimed = PlayerPrefs.GetInt(quest.questName + "_RewardClaimed", 0) == 1;
         }
     }
 }

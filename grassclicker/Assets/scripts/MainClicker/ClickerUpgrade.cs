@@ -3,51 +3,45 @@ using System;
 using UnityEngine.UI;
 using TMPro;
 
-
-public class ClipperUpgrade : MonoBehaviour
+public class ClickerUpgrade : MonoBehaviour
 {
-    public Button button;
+    public static double upgrade;
     public GameObject backdrop;
     public GameObject icon;
+    public Button button;
     public TextMeshProUGUI main;
     public TextMeshProUGUI description;
     public TextMeshProUGUI price;
-
-    public static double upgrade;
     public static double grassNeeded;
 
     void Start()
     {
         if (!PlayerPrefs.HasKey("FirstTimeOpened"))
         {
-            description.text = "placeholder";
-            grassNeeded = 1;
             upgrade = 1;
 
             PlayerPrefs.SetInt("FirstTimeOpened", 1);
             PlayerPrefs.Save();
         }
-        grassNeeded = 1;
         upgrade = 1;
     }
 
     void Update()
     {
-        UpdateButtonState();
+        CheckForUpgrade();
+        button.interactable = GlobalCount.gemTotal >= 10;
     }
 
-    private void UpdateButtonState()
+    private void CheckForUpgrade()
     {
-        button.interactable = GlobalCount.currentTotal >= grassNeeded;
         backdrop.GetComponent<UnityEngine.UI.Image>().color = new Color(0.5f, 0.5f, 0.5f, 1f);
-
-        if (GlobalClippers.level > 1 && upgrade == 1)
+        if (AutoClicker.countIncrease > 0.10 && upgrade == 1)
         {
-            button.gameObject.SetActive(true);
+            backdrop.SetActive(true);
         }
         else
         {
-            button.gameObject.SetActive(false);
+            backdrop.SetActive(false);
         }
         price.text = GlobalCount.FormatLargeNumber(grassNeeded);
     }

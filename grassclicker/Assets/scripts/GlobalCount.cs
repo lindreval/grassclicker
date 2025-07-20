@@ -8,6 +8,7 @@ using TMPro;
 public class GlobalCount : MonoBehaviour
 {
     public static double currentTotal;
+    public static double allTimeCount;
     public static double gemTotal;
     public TextMeshProUGUI totalText;
     public TextMeshProUGUI perSecText;
