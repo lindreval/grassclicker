@@ -5,25 +5,24 @@ using TMPro;
 
 public class ClickerUpgrade : MonoBehaviour
 {
-    public static double upgrade;
+    public static int upgrade;
     public GameObject backdrop;
     public GameObject icon;
     public Button button;
     public TextMeshProUGUI main;
     public TextMeshProUGUI description;
     public TextMeshProUGUI price;
-    public static double grassNeeded;
+    
+
+    public static int index;
+
+    public static double[] grassNeeded = {
+        20, 30
+    };
 
     void Start()
     {
-        if (!PlayerPrefs.HasKey("FirstTimeOpened"))
-        {
-            upgrade = 1;
-
-            PlayerPrefs.SetInt("FirstTimeOpened", 1);
-            PlayerPrefs.Save();
-        }
-        upgrade = 1;
+        upgrade = SaveManager.Instance.gameData.clickerUpgrade;
     }
 
     void Update()
@@ -43,7 +42,7 @@ public class ClickerUpgrade : MonoBehaviour
         {
             backdrop.SetActive(false);
         }
-        price.text = GlobalCount.FormatLargeNumber(grassNeeded);
+        price.text = GlobalCount.FormatLargeNumber(grassNeeded[index]);
     }
 }
 

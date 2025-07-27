@@ -7,7 +7,7 @@ public class GlobalClippers : MonoBehaviour
 {
     public Button button;
     public GameObject backdrop;
-    public GameObject icon;
+    public Image icon;
 
     public TextMeshProUGUI mainText;
     public TextMeshProUGUI statsText;
@@ -21,15 +21,7 @@ public class GlobalClippers : MonoBehaviour
 
     void Start()
     {
-        if (!PlayerPrefs.HasKey("FirstTimeOpened"))
-        {
-            grassNeeded = 10;
-            perSec = 0;
-            level = 0;
-
-            PlayerPrefs.SetInt("FirstTimeOpened", 1);
-            PlayerPrefs.Save();
-        }
+       level = SaveManager.Instance.gameData.clipperLevel;
     }
 
     void Update()
@@ -48,13 +40,22 @@ public class GlobalClippers : MonoBehaviour
     {
         button.interactable = GlobalCount.currentTotal >= grassNeeded;
 
+        if (GlobalCount.currentTotal < grassNeeded)
+        {
+            backdrop.GetComponent<UnityEngine.UI.Image>().color = new Color(0.5f, 0.5f, 0.5f, 0.3f);
+        }
+        else
+        {
+            backdrop.GetComponent<UnityEngine.UI.Image>().color = new Color(0.5f, 0.5f, 0.5f, 1f);
+        }
+
         if (level == 0)
         {
             mainText.text = "???";
             statsText.text = "";
             levelText.text = "";
 
-            backdrop.GetComponent<UnityEngine.UI.Image>().color = new Color(0.5f, 0.5f, 0.5f, 0.3f);
+            icon.color = Color.black;
         }
         else
         {
@@ -62,7 +63,7 @@ public class GlobalClippers : MonoBehaviour
             statsText.text = GlobalCount.FormatLargeNumber(perSec) + " grass per sec";
             levelText.text = level.ToString();
 
-            backdrop.GetComponent<UnityEngine.UI.Image>().color = new Color(0.5f, 0.5f, 0.5f, 1f);
+            icon.color = Color.white;
         }
 
         description.text = "It'll snip a blade or two";

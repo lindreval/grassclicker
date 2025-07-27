@@ -13,10 +13,20 @@ public class GlobalCount : MonoBehaviour
     public TextMeshProUGUI totalText;
     public TextMeshProUGUI perSecText;
 
+    void Start()
+    {
+        currentTotal = SaveManager.Instance.gameData.currentTotal;
+        allTimeCount = SaveManager.Instance.gameData.allTimeCount;
+        gemTotal = SaveManager.Instance.gameData.gemTotal;
+    }
+
     private void Update()
     {
         totalText.text = "Total = " + FormatLargeNumber(currentTotal);
         perSecText.text = FormatLargeNumber(AutoClicker.countIncrease) + " grass touched/sec";
+
+        //Save
+        SaveManager.Instance.gameData.currentTotal = currentTotal;
     }
     
     public static string FormatLargeNumber(double number)

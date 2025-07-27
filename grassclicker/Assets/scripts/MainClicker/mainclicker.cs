@@ -13,13 +13,6 @@ public class mainclicker : MonoBehaviour
 
     void Start()
     {
-        if (!PlayerPrefs.HasKey("FirstTimeOpened"))
-        {
-            clickValue = 1;
-
-            PlayerPrefs.SetInt("FirstTimeOpened", 1);
-            PlayerPrefs.Save();
-        }
         clickValue = 1;
     }
 
