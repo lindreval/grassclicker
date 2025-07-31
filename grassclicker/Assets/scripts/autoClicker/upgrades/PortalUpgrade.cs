@@ -6,7 +6,7 @@ using UnityEngine.UI;
 using TMPro;
 
 
-public class ClipperUpgrade : MonoBehaviour
+public class PortalUpgrade : MonoBehaviour
 {
     public Button button;
     public TextMeshProUGUI main;
@@ -25,16 +25,16 @@ public class ClipperUpgrade : MonoBehaviour
     public GameObject backdrop;
 
     private string[] names = {
-        "Sharpened Clipers", "Titanium Edge", "Diamond Coated", "Dual Blades", "Shredder",
-        "Turbo Shears", "Cyber Clippers", "Radioactive Clippers", "Flame Snippers", "Lawn Reaper",
-        "Nano-Teeth", "Quantum Clippers", "FTL", "'Blades That Cut Through Enything'", "Reality Shears"
+        "Fully Grown", "Swift Slitering", "Tunnel System", "Steel Skin", "Nutritious Droppings",
+        "Diamond Teeth", "Robotic Implants", "Titanic Length", "Worm King", "Wormhole Core",
+        "Cosmic Crawling", "Dimensional Stomach", "FTL Digestion", "Outerversal Travel", "The Infinite Gigaworm"
 
     };
 
     public static double[] grassNeeded = {
-        2e4, 2e5, 2e7, 2e9, 2e11,
-        2e14, 2e17, 2e20, 2e23, 2e27,
-        2e31, 2e35, 2e39, 2e43, 2e47
+        8e21, 8e22, 8e24, 8e26, 8e28,
+        8e31, 8e34, 8e37, 8e40, 8e44,
+        8e48, 8e52, 8e56, 8e60, 8e64
     };
 
     public static int index;
@@ -42,8 +42,8 @@ public class ClipperUpgrade : MonoBehaviour
 
     void Start()
     {
-        upgrade = SaveManager.Instance.gameData.clipperUpgrade;
-        index = SaveManager.Instance.gameData.clipperIndex;
+        upgrade = SaveManager.Instance.gameData.portalUpgrade;
+        index = SaveManager.Instance.gameData.portalIndex;
     }
 
     void Update()

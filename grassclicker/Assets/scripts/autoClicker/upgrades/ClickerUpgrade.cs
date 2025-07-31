@@ -1,12 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
-using System;
 using UnityEngine;
+using System;
 using UnityEngine.UI;
 using TMPro;
 
-
-public class ClipperUpgrade : MonoBehaviour
+public class ClickerUpgrade : MonoBehaviour
 {
     public Button button;
     public TextMeshProUGUI main;
@@ -16,8 +13,10 @@ public class ClipperUpgrade : MonoBehaviour
     public static int upgrade;
 
 
-    public int[] levels = {
-        10, 25, 50, 100, 150, 200, 250, 300, 350, 400, 450, 500, 550, 600, 1000
+    public double[] levels = {
+        5e5, 5e6, 5e7, 5e10, 5e12,
+        5e15, 5e18, 5e21, 5e24, 5e28,
+        5e32, 5e36, 5e40, 5e44, 5e48
     };
 
     public GameObject icon;
@@ -25,37 +24,36 @@ public class ClipperUpgrade : MonoBehaviour
     public GameObject backdrop;
 
     private string[] names = {
-        "Sharpened Clipers", "Titanium Edge", "Diamond Coated", "Dual Blades", "Shredder",
-        "Turbo Shears", "Cyber Clippers", "Radioactive Clippers", "Flame Snippers", "Lawn Reaper",
-        "Nano-Teeth", "Quantum Clippers", "FTL", "'Blades That Cut Through Enything'", "Reality Shears"
+        "Finger Strengthener", "Calloused Thumb", "Heavy Finger", "6th Finger", "Clicker Gloves",
+        "Mechanical Splint", "Touch Mastery", "Bionic Fingertip", "Ultra Tap", "1000 years of Tap",
+        "Touch Enlightement", "Quantum Tapping", "FTL Reflex", "Cosmic Touch", "Reality Click"
 
     };
 
     public static double[] grassNeeded = {
-        2e4, 2e5, 2e7, 2e9, 2e11,
-        2e14, 2e17, 2e20, 2e23, 2e27,
-        2e31, 2e35, 2e39, 2e43, 2e47
+        5e3, 5e4, 5e6, 5e8, 5e10,
+        5e13, 5e16, 5e19, 5e22, 5e26,
+        5e30, 5e34, 5e38, 5e42, 5e46
     };
 
     public static int index;
 
-
     void Start()
     {
-        upgrade = SaveManager.Instance.gameData.clipperUpgrade;
-        index = SaveManager.Instance.gameData.clipperIndex;
+        upgrade = SaveManager.Instance.gameData.clickerUpgrade;
     }
 
     void Update()
     {
-        UpdateButtonState();
+        CheckForUpgrade();
+        button.interactable = GlobalCount.gemTotal >= 10;
     }
 
-    private void UpdateButtonState()
+    private void CheckForUpgrade()
     {
         button.interactable = GlobalCount.currentTotal >= grassNeeded[index];
        
-        backdrop.SetActive(GlobalClippers.level > levels[index]);
+        backdrop.SetActive(GlobalCount.allTimeCount > levels[index]);
         
         price.text = GlobalCount.FormatLargeNumber(grassNeeded[index]);
 

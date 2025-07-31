@@ -6,7 +6,7 @@ using UnityEngine.UI;
 using TMPro;
 
 
-public class ClipperUpgrade : MonoBehaviour
+public class MaxUpgrade : MonoBehaviour
 {
     public Button button;
     public TextMeshProUGUI main;
@@ -25,16 +25,16 @@ public class ClipperUpgrade : MonoBehaviour
     public GameObject backdrop;
 
     private string[] names = {
-        "Sharpened Clipers", "Titanium Edge", "Diamond Coated", "Dual Blades", "Shredder",
-        "Turbo Shears", "Cyber Clippers", "Radioactive Clippers", "Flame Snippers", "Lawn Reaper",
-        "Nano-Teeth", "Quantum Clippers", "FTL", "'Blades That Cut Through Enything'", "Reality Shears"
+        "Grass and Grind", "Grass Diet", "Blade Bro", "Shrub Shredder", "'Just touch grass bro'",
+        "Grass Dumbells", "Grass Salt Spray", "Grass Skincare", "Positive Grassthal Tilt", "Grass Tinted Eye",
+        "Garden Mogged", "Dimensional Grassarms", "FTL Dewing", "Grassversal Jawline", "King Grassmaxxer"
 
     };
 
     public static double[] grassNeeded = {
-        2e4, 2e5, 2e7, 2e9, 2e11,
-        2e14, 2e17, 2e20, 2e23, 2e27,
-        2e31, 2e35, 2e39, 2e43, 2e47
+        7e9, 7e10, 7e12, 7e14, 7e16,
+        7e19, 7e22, 7e25, 7e28, 7e32,
+        7e36, 7e40, 7e44, 7e48, 7e52
     };
 
     public static int index;
@@ -42,8 +42,8 @@ public class ClipperUpgrade : MonoBehaviour
 
     void Start()
     {
-        upgrade = SaveManager.Instance.gameData.clipperUpgrade;
-        index = SaveManager.Instance.gameData.clipperIndex;
+        upgrade = SaveManager.Instance.gameData.maxUpgrade;
+        index = SaveManager.Instance.gameData.maxIndex;
     }
 
     void Update()

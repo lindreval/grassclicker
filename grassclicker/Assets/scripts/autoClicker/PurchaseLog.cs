@@ -231,6 +231,204 @@ public class PurchaseLog : MonoBehaviour
                     SaveManager.Instance.gameData.clipperIndex = ClipperUpgrade.index;
                 }
                 break;
+            case PurchaseType.Gnome:
+                if (GlobalCount.currentTotal >= GnomeUpgrade.grassNeeded[GnomeUpgrade.index])
+                {
+                    GlobalCount.currentTotal -= GnomeUpgrade.grassNeeded[GnomeUpgrade.index];
+                    GnomeUpgrade.upgrade *= 2;
+                    SaveManager.Instance.gameData.gnomeUpgrade = GnomeUpgrade.upgrade;
+
+                    GnomeUpgrade.index += 1;
+                    SaveManager.Instance.gameData.gnomeIndex = GnomeUpgrade.index;
+                }
+                break;
+            case PurchaseType.Bunny:
+                if (GlobalCount.currentTotal >= BunnyUpgrade.grassNeeded[BunnyUpgrade.index])
+                {
+                    GlobalCount.currentTotal -= BunnyUpgrade.grassNeeded[BunnyUpgrade.index];
+                    BunnyUpgrade.upgrade *= 2;
+                    SaveManager.Instance.gameData.bunnyUpgrade = BunnyUpgrade.upgrade;
+
+                    BunnyUpgrade.index += 1;
+                    SaveManager.Instance.gameData.bunnyIndex = BunnyUpgrade.index;
+                }
+                break;
+            case PurchaseType.Mower:
+                if (GlobalCount.currentTotal >= MowerUpgrade.grassNeeded[MowerUpgrade.index])
+                {
+                    GlobalCount.currentTotal -= MowerUpgrade.grassNeeded[MowerUpgrade.index];
+                    MowerUpgrade.upgrade *= 2;
+                    SaveManager.Instance.gameData.mowerUpgrade = MowerUpgrade.upgrade;
+
+                    MowerUpgrade.index += 1;
+                    SaveManager.Instance.gameData.mowerIndex = MowerUpgrade.index;
+                }
+                break;
+            case PurchaseType.Gardener:
+                if (GlobalCount.currentTotal >= GardenerUpgrade.grassNeeded[GardenerUpgrade.index])
+                {
+                    GlobalCount.currentTotal -= GardenerUpgrade.grassNeeded[GardenerUpgrade.index];
+                    GardenerUpgrade.upgrade *= 2;
+                    SaveManager.Instance.gameData.gardenerUpgrade = GardenerUpgrade.upgrade;
+
+                    GardenerUpgrade.index += 1;
+                    SaveManager.Instance.gameData.gardenerIndex = GardenerUpgrade.index;
+                }
+                break;
+            case PurchaseType.Max:
+                if (GlobalCount.currentTotal >= MaxUpgrade.grassNeeded[MaxUpgrade.index])
+                {
+                    GlobalCount.currentTotal -= MaxUpgrade.grassNeeded[MaxUpgrade.index];
+                    MaxUpgrade.upgrade *= 2;
+                    SaveManager.Instance.gameData.maxUpgrade = MaxUpgrade.upgrade;
+
+                    MaxUpgrade.index += 1;
+                    SaveManager.Instance.gameData.maxIndex = MaxUpgrade.index;
+                }
+                break;
+            case PurchaseType.Coin:
+                if (GlobalCount.currentTotal >= CoinUpgrade.grassNeeded[CoinUpgrade.index])
+                {
+                    GlobalCount.currentTotal -= CoinUpgrade.grassNeeded[CoinUpgrade.index];
+                    CoinUpgrade.upgrade *= 2;
+                    SaveManager.Instance.gameData.coinUpgrade = CoinUpgrade.upgrade;
+
+                    CoinUpgrade.index += 1;
+                    SaveManager.Instance.gameData.coinIndex = CoinUpgrade.index;
+                }
+                break;
+            case PurchaseType.MrLeaf:
+                if (GlobalCount.currentTotal >= LeafUpgrade.grassNeeded[LeafUpgrade.index])
+                {
+                    GlobalCount.currentTotal -= MowerUpgrade.grassNeeded[LeafUpgrade.index];
+                    LeafUpgrade.upgrade *= 2;
+                    SaveManager.Instance.gameData.leafUpgrade = LeafUpgrade.upgrade;
+
+                    LeafUpgrade.index += 1;
+                    SaveManager.Instance.gameData.leafIndex = LeafUpgrade.index;
+                }
+                break;
+            case PurchaseType.GrassGPT:
+                if (GlobalCount.currentTotal >= GPTUpgrade.grassNeeded[GPTUpgrade.index])
+                {
+                    GlobalCount.currentTotal -= GPTUpgrade.grassNeeded[GPTUpgrade.index];
+                    GPTUpgrade.upgrade *= 2;
+                    SaveManager.Instance.gameData.gptUpgrade = GPTUpgrade.upgrade;
+
+                    GPTUpgrade.index += 1;
+                    SaveManager.Instance.gameData.gptIndex = GPTUpgrade.index;
+                }
+                break;
+            case PurchaseType.Gigaworm:
+                if (GlobalCount.currentTotal >= WormUpgrade.grassNeeded[WormUpgrade.index])
+                {
+                    GlobalCount.currentTotal -= WormUpgrade.grassNeeded[WormUpgrade.index];
+                    WormUpgrade.upgrade *= 2;
+                    SaveManager.Instance.gameData.wormUpgrade = WormUpgrade.upgrade;
+
+                    WormUpgrade.index += 1;
+                    SaveManager.Instance.gameData.wormIndex = WormUpgrade.index;
+                }
+                break;
+            case PurchaseType.Grassbot:
+                if (GlobalCount.currentTotal >= BotUpgrade.grassNeeded[BotUpgrade.index])
+                {
+                    GlobalCount.currentTotal -= BotUpgrade.grassNeeded[BotUpgrade.index];
+                    BotUpgrade.upgrade *= 2;
+                    SaveManager.Instance.gameData.botUpgrade = BotUpgrade.upgrade;
+
+                    BotUpgrade.index += 1;
+                    SaveManager.Instance.gameData.botIndex = BotUpgrade.index;
+                }
+                break;
+            case PurchaseType.Midas:
+                if (GlobalCount.currentTotal >= MidasUpgrade.grassNeeded[MidasUpgrade.index])
+                {
+                    GlobalCount.currentTotal -= MidasUpgrade.grassNeeded[MidasUpgrade.index];
+                    MidasUpgrade.upgrade *= 2;
+                    SaveManager.Instance.gameData.midasUpgrade = MidasUpgrade.upgrade;
+
+                    MidasUpgrade.index += 1;
+                    SaveManager.Instance.gameData.midasIndex = MidasUpgrade.index;
+                }
+                break;
+            case PurchaseType.Dryad:
+                if (GlobalCount.currentTotal >= DryadUpgrade.grassNeeded[DryadUpgrade.index])
+                {
+                    GlobalCount.currentTotal -= DryadUpgrade.grassNeeded[DryadUpgrade.index];
+                    DryadUpgrade.upgrade *= 2;
+                    SaveManager.Instance.gameData.dryadUpgrade = DryadUpgrade.upgrade;
+
+                    DryadUpgrade.index += 1;
+                    SaveManager.Instance.gameData.dryadIndex = DryadUpgrade.index;
+                }
+                break;
+            case PurchaseType.Grassman:
+                if (GlobalCount.currentTotal >= GmanUpgrade.grassNeeded[GmanUpgrade.index])
+                {
+                    GlobalCount.currentTotal -= GmanUpgrade.grassNeeded[GmanUpgrade.index];
+                    GmanUpgrade.upgrade *= 2;
+                    SaveManager.Instance.gameData.gmanUpgrade = GmanUpgrade.upgrade;
+
+                    GmanUpgrade.index += 1;
+                    SaveManager.Instance.gameData.gmanIndex = GmanUpgrade.index;
+                }
+                break;
+            case PurchaseType.Grask:
+                if (GlobalCount.currentTotal >= GraskUpgrade.grassNeeded[GraskUpgrade.index])
+                {
+                    GlobalCount.currentTotal -= GraskUpgrade.grassNeeded[GraskUpgrade.index];
+                    GraskUpgrade.upgrade *= 2;
+                    SaveManager.Instance.gameData.graskUpgrade = GraskUpgrade.upgrade;
+
+                    GraskUpgrade.index += 1;
+                    SaveManager.Instance.gameData.graskIndex = GraskUpgrade.index;
+                }
+                break;
+            case PurchaseType.Portal:
+                if (GlobalCount.currentTotal >= PortalUpgrade.grassNeeded[PortalUpgrade.index])
+                {
+                    GlobalCount.currentTotal -= PortalUpgrade.grassNeeded[PortalUpgrade.index];
+                    PortalUpgrade.upgrade *= 2;
+                    SaveManager.Instance.gameData.portalUpgrade = PortalUpgrade.upgrade;
+
+                    PortalUpgrade.index += 1;
+                    SaveManager.Instance.gameData.portalIndex = PortalUpgrade.index;
+                }
+                break;
+            case PurchaseType.Tree:
+                if (GlobalCount.currentTotal >= TreeUpgrade.grassNeeded[TreeUpgrade.index])
+                {
+                    GlobalCount.currentTotal -= TreeUpgrade.grassNeeded[TreeUpgrade.index];
+                    TreeUpgrade.upgrade *= 2;
+                    SaveManager.Instance.gameData.treeUpgrade = TreeUpgrade.upgrade;
+
+                    TreeUpgrade.index += 1;
+                    SaveManager.Instance.gameData.treeIndex = TreeUpgrade.index;
+                }
+                break;
+            case PurchaseType.Lawnfather:
+                if (GlobalCount.currentTotal >= FatherUpgrade.grassNeeded[FatherUpgrade.index])
+                {
+                    GlobalCount.currentTotal -= FatherUpgrade.grassNeeded[FatherUpgrade.index];
+                    FatherUpgrade.upgrade *= 2;
+                    SaveManager.Instance.gameData.fatherUpgrade = FatherUpgrade.upgrade;
+
+                    FatherUpgrade.index += 1;
+                    SaveManager.Instance.gameData.fatherIndex = FatherUpgrade.index;
+                }
+                break;
+            case PurchaseType.God:
+                if (GlobalCount.currentTotal >= GodUpgrade.grassNeeded[GodUpgrade.index])
+                {
+                    GlobalCount.currentTotal -= GodUpgrade.grassNeeded[GodUpgrade.index];
+                    GodUpgrade.upgrade *= 2;
+                    SaveManager.Instance.gameData.godUpgrade = GodUpgrade.upgrade;
+
+                    GodUpgrade.index += 1;
+                    SaveManager.Instance.gameData.godIndex = GodUpgrade.index;
+                }
+                break;
         }
         questManager.UpdateQuestProgress("PurchaseUpgrade", 1);
         achievementManager.UpdateQuestProgress("PurchaseUpgrade", 1);

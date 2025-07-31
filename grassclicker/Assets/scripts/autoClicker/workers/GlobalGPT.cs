@@ -28,7 +28,7 @@ public class GlobalGPT : MonoBehaviour
     {
         UpdateButtonState();
         UpdateCPS();
-        grassNeeded = Math.Round(Math.Pow(1.15, level) * 6.8e10);
+        grassNeeded = Math.Round(Math.Pow(1.15, level) * 6.8e9);
     }
 
     private void UpdateCPS()

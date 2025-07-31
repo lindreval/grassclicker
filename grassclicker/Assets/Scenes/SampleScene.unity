@@ -10278,6 +10278,24 @@ MonoBehaviour:
     clickerUpgrade: 1
     clipperUpgrade: 1
     clipperIndex: 0
+    gnomeUpgrade: 1
+    gnomeIndex: 0
+    bunnyUpgrade: 1
+    bunnyIndex: 0
+    mowerUpgrade: 1
+    mowerIndex: 0
+    gardenerUpgrade: 1
+    gardenerIndex: 0
+    maxUpgrade: 1
+    maxIndex: 0
+    coinUpgrade: 1
+    coinIndex: 0
+    leafUpgrade: 1
+    leafIndex: 0
+    gptUpgrade: 1
+    gptIndex: 0
+    wormUpgrade: 1
+    wormIndex: 0
     maxTimeAway: 7200
 --- !u!4 &1177007677
 Transform:
@@ -10659,12 +10677,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 807075639}
-  icon: {fileID: 1229176173}
   main: {fileID: 1244341162}
   description: {fileID: 1366920630}
   price: {fileID: 1866678813}
   levels: 32000000c80000002c01000090010000f401000058020000bc0200002003000084030000e80300004c040000b00400001405000078050000dc05000040060000a4060000080700006c070000d0070000
-  backdrop: []
+  icon: {fileID: 0}
+  backdrop: {fileID: 0}
 --- !u!1 &1224982935
 GameObject:
   m_ObjectHideFlags: 0
@@ -16110,12 +16128,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bebf8ed0115140b5a3132a50c61b54d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backdrop: {fileID: 1134265154}
-  icon: {fileID: 294673540}
   button: {fileID: 791291030}
   main: {fileID: 1635369189}
   description: {fileID: 187424653}
   price: {fileID: 254473409}
+  levels:
+  - 500000
+  - 5000000
+  - 50000000
+  - 50000000000
+  - 5000000000000
+  - 5000000000000000
+  - 5e+18
+  - 5e+21
+  - 5e+24
+  - 5e+28
+  - 5e+32
+  - 5e+36
+  - 5e+40
+  - 5e+44
+  - 5e+48
+  icon: {fileID: 294673540}
+  backdrop: {fileID: 1134265154}
 --- !u!4 &1825193229
 Transform:
   m_ObjectHideFlags: 0

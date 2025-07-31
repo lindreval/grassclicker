@@ -6,7 +6,7 @@ using UnityEngine.UI;
 using TMPro;
 
 
-public class ClipperUpgrade : MonoBehaviour
+public class BunnyUpgrade : MonoBehaviour
 {
     public Button button;
     public TextMeshProUGUI main;
@@ -25,16 +25,16 @@ public class ClipperUpgrade : MonoBehaviour
     public GameObject backdrop;
 
     private string[] names = {
-        "Sharpened Clipers", "Titanium Edge", "Diamond Coated", "Dual Blades", "Shredder",
-        "Turbo Shears", "Cyber Clippers", "Radioactive Clippers", "Flame Snippers", "Lawn Reaper",
-        "Nano-Teeth", "Quantum Clippers", "FTL", "'Blades That Cut Through Enything'", "Reality Shears"
+        "Healthy Carrot", "Bouncy Boots", "Burrow Network", "Never Skip Leg Day", "Steel Teeth",
+        "Lettuce Rewards Program", "Diamond Fur", "Golden Carrots", "Cyber Boots", "Magical Thumpers",
+        "Galaxy Carrots", "Dimensional Burrows", "FTL Teeth", "Outerversal Fur", "Reality Hops"
 
     };
 
     public static double[] grassNeeded = {
-        2e4, 2e5, 2e7, 2e9, 2e11,
-        2e14, 2e17, 2e20, 2e23, 2e27,
-        2e31, 2e35, 2e39, 2e43, 2e47
+        4e6, 4e7, 4e9, 4e11, 4e13,
+        4e16, 4e19, 4e22, 4e25, 4e29,
+        4e33, 4e37, 4e41, 4e45, 4e49
     };
 
     public static int index;
@@ -42,8 +42,8 @@ public class ClipperUpgrade : MonoBehaviour
 
     void Start()
     {
-        upgrade = SaveManager.Instance.gameData.clipperUpgrade;
-        index = SaveManager.Instance.gameData.clipperIndex;
+        upgrade = SaveManager.Instance.gameData.bunnyUpgrade;
+        index = SaveManager.Instance.gameData.bunnyIndex;
     }
 
     void Update()

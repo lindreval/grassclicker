@@ -33,5 +33,62 @@ public class GameData
     public int clipperUpgrade = 1;
     public int clipperIndex = 0;
 
+    public int gnomeUpgrade = 1;
+    public int gnomeIndex = 0;
+
+    public int bunnyUpgrade = 1;
+    public int bunnyIndex = 0;
+
+    public int mowerUpgrade = 1;
+    public int mowerIndex = 0;
+
+    public int gardenerUpgrade = 1;
+    public int gardenerIndex = 0;
+
+    public int maxUpgrade = 1;
+    public int maxIndex = 0;
+
+    public int coinUpgrade = 1;
+    public int coinIndex = 0;
+
+    public int leafUpgrade = 1;
+    public int leafIndex = 0;
+
+    public int gptUpgrade = 1;
+    public int gptIndex = 0;
+
+    public int wormUpgrade = 1;
+    public int wormIndex = 0;
+
+    public int botUpgrade = 1;
+    public int botIndex = 0;
+
+    public int midasUpgrade = 1;
+    public int midasIndex = 0;
+
+    public int dryadUpgrade = 1;
+    public int dryadIndex = 0;
+
+    public int alienUpgrade = 1;
+    public int alienIndex = 0;
+
+    public int gmanUpgrade = 1;
+    public int gmanIndex = 0;
+
+    public int graskUpgrade = 1;
+    public int graskIndex = 0;
+
+    public int portalUpgrade = 1;
+    public int portalIndex = 0;
+
+    public int treeUpgrade = 1;
+    public int treeIndex = 0;
+
+    public int fatherUpgrade = 1;
+    public int fatherIndex = 0;
+
+    public int godUpgrade = 1;
+    public int godIndex = 0;
+
     public double maxTimeAway = 7200;
 }

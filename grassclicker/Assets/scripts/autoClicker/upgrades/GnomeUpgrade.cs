@@ -6,7 +6,7 @@ using UnityEngine.UI;
 using TMPro;
 
 
-public class ClipperUpgrade : MonoBehaviour
+public class GnomeUpgrade : MonoBehaviour
 {
     public Button button;
     public TextMeshProUGUI main;
@@ -25,16 +25,16 @@ public class ClipperUpgrade : MonoBehaviour
     public GameObject backdrop;
 
     private string[] names = {
-        "Sharpened Clipers", "Titanium Edge", "Diamond Coated", "Dual Blades", "Shredder",
-        "Turbo Shears", "Cyber Clippers", "Radioactive Clippers", "Flame Snippers", "Lawn Reaper",
-        "Nano-Teeth", "Quantum Clippers", "FTL", "'Blades That Cut Through Enything'", "Reality Shears"
+        "Pointer Hats", "Ceramic Armor", "Beard Wax", "Polished Finish", "Moveable Limbs",
+        "Minature Mowers", "Robotic Modifications", "Luck of the Four-Leaf Clover", "Blessing of the Mushroom", "Magical Staff",
+        "Gnome Union", "Quantum Robes", "FTL Boots", "'Outerversal Caps'", "Reality Beards"
 
     };
 
     public static double[] grassNeeded = {
-        2e4, 2e5, 2e7, 2e9, 2e11,
-        2e14, 2e17, 2e20, 2e23, 2e27,
-        2e31, 2e35, 2e39, 2e43, 2e47
+        3e5, 3e6, 3e8, 3e10, 3e12,
+        3e15, 3e18, 3e21, 3e24, 3e28,
+        3e32, 3e36, 3e40, 3e44, 3e48
     };
 
     public static int index;
@@ -42,8 +42,8 @@ public class ClipperUpgrade : MonoBehaviour
 
     void Start()
     {
-        upgrade = SaveManager.Instance.gameData.clipperUpgrade;
-        index = SaveManager.Instance.gameData.clipperIndex;
+        upgrade = SaveManager.Instance.gameData.gnomeUpgrade;
+        index = SaveManager.Instance.gameData.gnomeIndex;
     }
 
     void Update()
