@@ -25,9 +25,9 @@ public class FatherUpgrade : MonoBehaviour
     public GameObject backdrop;
 
     private string[] names = {
-        "Fully Grown", "Swift Slitering", "Tunnel System", "Steel Skin", "Nutritious Droppings",
-        "Diamond Teeth", "Robotic Implants", "Titanic Length", "Worm King", "Wormhole Core",
-        "Cosmic Crawling", "Dimensional Stomach", "FTL Digestion", "Outerversal Travel", "The Infinite Gigaworm"
+        "Turf Syndicate", "Family of Fertilizer", "Sod Laundering", "Whispered Respect", "Blood and Mulch Oath",
+        "Underground Root Conncections", "House of Green", "Turf Throne", "The Grass Enforcer", "The Fertilizer Front",
+        "The Green Empire", "Cosmic Connections", "World of Grass", "The Eternal Don", "The Godfather of Grass"
 
     };
 

@@ -25,9 +25,9 @@ public class MidasUpgrade : MonoBehaviour
     public GameObject backdrop;
 
     private string[] names = {
-        "Fully Grown", "Swift Slitering", "Tunnel System", "Steel Skin", "Nutritious Droppings",
-        "Diamond Teeth", "Robotic Implants", "Titanic Length", "Worm King", "Wormhole Core",
-        "Cosmic Crawling", "Dimensional Stomach", "FTL Digestion", "Outerversal Travel", "The Infinite Gigaworm"
+        "Green Thumb Touch", "Emerald Fingertips", "Verdant Crown", "Grass Skin", "Clover Blessing",
+        "Green Blood", "Blades of Fortune", "Turf Transmutation", "Emerald Gauntlets", "Evergreen Handshake",
+        "Green Throne", "Suffering From Success", "Verdant Divinity", "Planet of Sod", "The Grass King"
 
     };
 

@@ -25,10 +25,9 @@ public class BotUpgrade : MonoBehaviour
     public GameObject backdrop;
 
     private string[] names = {
-        "Fully Grown", "Swift Slitering", "Tunnel System", "Steel Skin", "Nutritious Droppings",
-        "Diamond Teeth", "Robotic Implants", "Titanic Length", "Worm King", "Wormhole Core",
-        "Cosmic Crawling", "Dimensional Stomach", "FTL Digestion", "Outerversal Travel", "The Infinite Gigaworm"
-
+        "Steel Plating", "High Speed Servos", "Precision Optics", "Solar Charging", "Advanced Weed Recognition",
+        "Diamond Plating", "Turbo Cooling", "Grass Compression Tank", "Antigravity Hovering", "Nanobot Upgrade",
+        "Quantum Processing Core", "Dimensional Mother Chip", "Impossible Computing", "Outerversal Intelligence", "The All-Knowing Computer"
     };
 
     public static double[] grassNeeded = {

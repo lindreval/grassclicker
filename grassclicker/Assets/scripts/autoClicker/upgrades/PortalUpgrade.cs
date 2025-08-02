@@ -25,9 +25,9 @@ public class PortalUpgrade : MonoBehaviour
     public GameObject backdrop;
 
     private string[] names = {
-        "Fully Grown", "Swift Slitering", "Tunnel System", "Steel Skin", "Nutritious Droppings",
-        "Diamond Teeth", "Robotic Implants", "Titanic Length", "Worm King", "Wormhole Core",
-        "Cosmic Crawling", "Dimensional Stomach", "FTL Digestion", "Outerversal Travel", "The Infinite Gigaworm"
+        "Reality Crack", "Swift Slitering", "Chlorophyll Surge", "Map", "The Sod Rift",
+        "Turfstorm Breach", "Green Gateway", "Gatekeeper", "The Lawn from Beyond", "Dimensional GPS",
+        "Cosmic Crawling", "Into the Grassverse", "Multiversal Flood", "Outerversal Travel", "The Infinite Pasture"
 
     };
 

@@ -25,9 +25,9 @@ public class AlienUpgrade : MonoBehaviour
     public GameObject backdrop;
 
     private string[] names = {
-        "Fully Grown", "Swift Slitering", "Tunnel System", "Steel Skin", "Nutritious Droppings",
-        "Diamond Teeth", "Robotic Implants", "Titanic Length", "Worm King", "Wormhole Core",
-        "Cosmic Crawling", "Dimensional Stomach", "FTL Digestion", "Outerversal Travel", "The Infinite Gigaworm"
+        "Chloroplast Visor", "Photosynthesis Ray", "Hover Harvesters", "Lawntractor Beam", "Galactic Fertilizer",
+        "Soil Pods", "Plasma Clippers", "Zero G Grow Beds", "Unidentifiable Floating Grass", "Xeno-Symbionts",
+        "Cosmic Turf Scanner", "Dimensional Reactor", "The Greening Beam", "Grass Nebula", "Overlord of the Green"
 
     };
 

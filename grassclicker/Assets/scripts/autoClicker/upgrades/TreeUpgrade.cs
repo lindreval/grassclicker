@@ -25,9 +25,9 @@ public class TreeUpgrade : MonoBehaviour
     public GameObject backdrop;
 
     private string[] names = {
-        "Fully Grown", "Swift Slitering", "Tunnel System", "Steel Skin", "Nutritious Droppings",
-        "Diamond Teeth", "Robotic Implants", "Titanic Length", "Worm King", "Wormhole Core",
-        "Cosmic Crawling", "Dimensional Stomach", "FTL Digestion", "Outerversal Travel", "The Infinite Gigaworm"
+        "Branches of Eternity", "Green Canopy", "Emerald Bark", "Photosynth Pulse", "World Sap",
+        "Planetary Expansion", "Bloom Season", "Grove Spirit", "Dryad Guardian", "Meadow Core",
+        "Mythical Bark", "Celestial Blossom", "Root Network of World", "Outerversal Grove", "Yggdrasil"
 
     };
 

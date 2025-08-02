@@ -25,10 +25,9 @@ public class GodUpgrade : MonoBehaviour
     public GameObject backdrop;
 
     private string[] names = {
-        "Fully Grown", "Swift Slitering", "Tunnel System", "Steel Skin", "Nutritious Droppings",
-        "Diamond Teeth", "Robotic Implants", "Titanic Length", "Worm King", "Wormhole Core",
-        "Cosmic Crawling", "Dimensional Stomach", "FTL Digestion", "Outerversal Travel", "The Infinite Gigaworm"
-
+        "Green Prayers", "Roots of Creations", "The Emerald Throne", "Turf Decree", "Verdant Commandments",
+        "Grass Gospel", "Lawn Above the Clouds", "Angels of the Green", "Evergreen Pantheon", "Green Genesis",
+        "Pasture Paradise", "Omnigrass", "One World Under Grass", "Emerald Convergance", "One World Under Grass"
     };
 
     public static double[] grassNeeded = {

@@ -25,9 +25,9 @@ public class DryadUpgrade : MonoBehaviour
     public GameObject backdrop;
 
     private string[] names = {
-        "Fully Grown", "Swift Slitering", "Tunnel System", "Steel Skin", "Nutritious Droppings",
-        "Diamond Teeth", "Robotic Implants", "Titanic Length", "Worm King", "Wormhole Core",
-        "Cosmic Crawling", "Dimensional Stomach", "FTL Digestion", "Outerversal Travel", "The Infinite Gigaworm"
+        "Whispering Roots", "Oak Heart", "Blossom Aura", "Spirit Aids", "Flowering Staff",
+        "Lullaby to the Leaves", "Moonlit Waltz", "Flowering Stadd", "Spirit of the Grove", "Magical Melody",
+        "Cosmic Bloom", "Mother Nature", "World Tree's Guardian", "Verdant Queen", "Nature's Pulse"
 
     };
 

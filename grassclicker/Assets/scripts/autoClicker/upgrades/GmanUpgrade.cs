@@ -25,9 +25,9 @@ public class GmanUpgrade : MonoBehaviour
     public GameObject backdrop;
 
     private string[] names = {
-        "Fully Grown", "Swift Slitering", "Tunnel System", "Steel Skin", "Nutritious Droppings",
-        "Diamond Teeth", "Robotic Implants", "Titanic Length", "Worm King", "Wormhole Core",
-        "Cosmic Crawling", "Dimensional Stomach", "FTL Digestion", "Outerversal Travel", "The Infinite Gigaworm"
+        "Cape of Green", "Mask of the Meadow", "Photosythensis Punch", "Weed Sense", "Green Beam",
+        "The Green Fist", "Turbo Lawn Boots", "Man of Grass", "Turf Flight", "The Sod Shield",
+        "Suit of Sod", "Cosmic Grass Beam", "Dimensional Green Punch", "Grass of Hope", "The Number One Hero"
 
     };
 

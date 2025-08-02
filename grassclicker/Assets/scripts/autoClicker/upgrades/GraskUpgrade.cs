@@ -25,9 +25,9 @@ public class GraskUpgrade : MonoBehaviour
     public GameObject backdrop;
 
     private string[] names = {
-        "Fully Grown", "Swift Slitering", "Tunnel System", "Steel Skin", "Nutritious Droppings",
-        "Diamond Teeth", "Robotic Implants", "Titanic Length", "Worm King", "Wormhole Core",
-        "Cosmic Crawling", "Dimensional Stomach", "FTL Digestion", "Outerversal Travel", "The Infinite Gigaworm"
+        "Sporeling Infestation", "Root Leech", "Chlorophyll Drainer", "Creeping Tendrils", "Soil Corruption",
+        "Seed of Hunger", "Fungal Webbing", "Chloroswarm", "Verdant Plague", "Spore Wormhole",
+        "Cosmic Swarm", "Dimensional Hivemind", "The Green Maw", "Apocalypse of Green", "The Infinite Gigaworm"
 
     };
 
